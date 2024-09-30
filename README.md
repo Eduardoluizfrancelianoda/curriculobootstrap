@@ -1,2 +1,2 @@
 # meu curriculo/portfolio em bootstrap
-https://eduardoluizfrancelianoda.github.io/meuprimeirosite/
+https://eduardoluizfrancelianoda.github.io/curriculobootstrap/
