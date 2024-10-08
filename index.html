@@ -55,10 +55,6 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" onsubmit="return searchSection()">
-                    <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
@@ -123,32 +119,14 @@
             </section>
         </div>
 
-        <script>
-            function searchSection() {
-                const input = document.getElementById('searchInput').value.toLowerCase();
-                const sections = {
-                    "home": "#home",
-                    "objetivo": "#objetivo",
-                    "formação": "#formacao",
-                    "habilidades": "#habilidades",
-                    "projetos": "#projetos",
-                    "contato": "#contato",
-                    "outro": "#outro"
-                };
-
-                if (sections[input]) {
-                    window.location.href = sections[input];
-                } else {
-                    alert("Seção não encontrada. Tente 'home', 'objetivo', 'formação', 'habilidades', 'projetos', 'contato', ou 'outro'.");
-                }
-                return false; // Evita o recarregamento da página
-            }
-        </script>
-
         <!-- bootstrap bundle -->
         <script src="js/bootstrap.bundle.js"></script>
     </main>
+    <footer>
+        <h6>Eduardo Luiz Franceliano</h6>
+        <h6>1°C</h6>
+        <h6>etec maria cristina medeiros</h6>
+    </footer>
 </body>
-
 
 </html>
