@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/customize.css">
   </head>
   <body style="background: linear-gradient(45deg, rgb(0, 68, 255), transparent, transparent, rgb(0, 195, 255), transparent); background-size: 200% 200%; animation: gradient 10s ease infinite;">
     <style>
@@ -80,13 +81,28 @@
             <!-- Formação Acadêmica -->
             <section class="mt-5" id="formacao">
                 <h2>Formação Acadêmica</h2>
-                <ul>
-                    <li><strong>Curso de Robótica</strong> - SESI Santo André (2023 - 2023)</li>
-                    <li><strong>Curso de TI</strong> - Etec Maria Cristina Medeiros (2024 - 2026)</li>
-                </ul>
-                <div class="gallery">
-                    <img src="siteteste/sesi.jpg" alt="Placeholder Image" style="width: 150px;">
-                    <img src="siteteste/etec-ribeirao-pires.jpg" alt="Placeholder Image" style="width: 150px;">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="siteteste/etec-ribeirao-pires.jpg" class="card-img-top" alt="ETEC Ribeirão Pires">
+                            <div class="card-body">
+                                <h5 class="card-title">ETEC Ribeirão Pires</h5>
+                                <p class="card-text">Curso Técnico em Informática. Período: 2024 - 2026.</p>
+                                <a href="https://etecmcm.cps.sp.gov.br/" class="btn btn-primary">Visitar Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="siteteste/sesi.jpg" class="card-img-top" alt="SESI">
+                            <div class="card-body">
+                                <h5 class="card-title">SESI Santo Andre</h5>
+                                <p class="card-text">curso de robotica para iniciantes. Período: 2023 - 2023.</p>
+                                <a href="https://www.portaldaindustria.com.br/sesi/" class="btn btn-primary">Visitar Site</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
     
@@ -112,17 +128,48 @@
             <!-- Projetos -->
             <section class="mt-5" id="projetos">
                 <h2>Projetos</h2>
-                <ul>
-                    <li><strong>Jogo de Cartas e Tabuleiro</strong> - um jogo de tabuleiro analógico completo e desenvolvido inspirado em um jogo de RPG de mesa chamado "Dungeons & Dragons" e o jogo eletrônico popular "Among Us".</li>
-                    <li><strong>Aplicativo em Python</strong> - um aplicativo de saúde que sugere receitas com os ingredientes inseridos pelo usuário e verifica datas de validade usando a biblioteca Pillow.</li>
-                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Jogo de Cartas e Tabuleiro</strong> - um jogo de tabuleiro analógico completo e desenvolvido inspirado em um jogo de RPG de mesa chamado "Dungeons & Dragons" e o jogo eletrônico popular "Among Us".</li>
+                    <li class="list-group-item"><strong>Aplicativo em Python</strong> - um aplicativo de saúde que sugere receitas com os ingredientes inseridos pelo usuário e verifica datas de validade usando a biblioteca Pillow.</li>
+                  </ul>
             </section>
         </div>
+            <!-- Certificações -->
+<section class="mt-5" id="certificacoes">
+    <h2>Certificações</h2>
+    <div class="row">
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="siteteste/certificadodobradesco(educacaofinanceira).PNG" class="card-img-top" alt="Certificado Bradesco Educação Financeira">
+                <div class="card-body">
+                    <p class="card-text">Certificação em Educação Financeira oferecida pelo Bradesco.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="siteteste/Screenshot_20240729_214312_Chrome.jpg" class="card-img-top" alt="Certificado Google Chrome">
+                <div class="card-body">
+                    <p class="card-text">Certificado de curso autoinstrucional processo de julgamento e tomada de decisões responsaveis</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100">
+                <img src="siteteste/inclusão.PNG" class="card-img-top" alt="Certificado Inclusão Digital">
+                <div class="card-body">
+                    <p class="card-text">Certificação em Inclusão Digital e Acessibilidade.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- bootstrap bundle -->
         <script src="js/bootstrap.bundle.js"></script>
     </main>
-    <footer>
+        <!--footer-->
+    <footer class="navbar-expand-lg bg-body-tertiary">
         <h6>Eduardo Luiz Franceliano</h6>
         <h6>1°C</h6>
         <h6>etec maria cristina medeiros</h6>
